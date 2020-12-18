@@ -1,0 +1,9 @@
+<ion-card>
+  <ion-card-header>
+    <ion-skeleton-text *ngIf="!photoIsLoaded" animated style="width: 100%; height: 150px"></ion-skeleton-text>
+    <img [src]="photoItem.photo" (load)="onLoadImage()">
+  </ion-card-header>
+  <ion-card-content fullscreen>
+    {{ photoItem.text }}
+  </ion-card-content>
+</ion-card>

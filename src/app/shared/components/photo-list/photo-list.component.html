@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+  <div *ngFor="let photoItem of displayedPhotoList">
+    <photo-component [photoItem]="photoItem"></photo-component>
+  </div>
+
+  <ion-infinite-scroll threshold="600px" (ionInfinite)="loadPhotos($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
