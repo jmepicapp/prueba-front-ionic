@@ -1,0 +1,7 @@
+<ion-toolbar>
+  <ion-icon class="icon" slot="start" name="search-outline"></ion-icon>
+  <ion-input type="text" inputmode="text" placeholder="Buscar por..." clearInput (ionChange)="filterPhotoList($event)"></ion-input>
+  <ion-select slot="end" placeholder="Seleccione" interface="popover" (ionChange)="selectSearchBy($event)">
+    <ion-select-option *ngFor="let searchField of searchFields" [value]="searchField">{{ searchField }}</ion-select-option>
+  </ion-select>
+</ion-toolbar>

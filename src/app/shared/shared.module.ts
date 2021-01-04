@@ -1,3 +1,4 @@
+import { SearchBarComponent } from './components/search-toolbar/search-bar.component';
 import { IonicModule } from '@ionic/angular';
 import { PhotoListComponent } from './components/photo-list/photo-list.component';
 import { PhotoComponent } from './components/photo/photo.component';
@@ -8,6 +9,7 @@ import { CommonModule } from '@angular/common';
   declarations: [
     PhotoComponent,
     PhotoListComponent,
+    SearchBarComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     PhotoComponent,
-    PhotoListComponent
+    PhotoListComponent,
+    SearchBarComponent
   ]
 })
 export class SharedModule { }

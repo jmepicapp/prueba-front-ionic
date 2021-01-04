@@ -1,0 +1,26 @@
+ion-toolbar {
+    left: 5%;
+    --background: #999999;
+    border-radius: 30px;
+    width: 90%;
+}
+
+ion-select {
+    --placeholder-color: white;
+    --placeholder-opacity: white;
+}
+
+.select-interface-option {
+    --background: #999999 !important;
+}
+
+ion-input {
+    margin-left: 10px;
+    --placeholder-color: white;
+    --placeholder-opacity: 1;
+}
+
+ion-icon {
+    margin-left: 10px;
+}
+

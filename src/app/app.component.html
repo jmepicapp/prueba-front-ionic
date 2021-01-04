@@ -1,3 +1,4 @@
 <ion-app>
-  <photo-list></photo-list>
+  <search-bar [searchFields]="searchFields" (searchTextEvent)="filterPhotoList($event)" (searchBy)="selectSearchBy($event)"></search-bar>
+  <photo-list [searchText]="searchText" [selectedSearchBy]="selectedSearchBy"></photo-list>
 </ion-app>
