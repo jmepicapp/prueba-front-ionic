@@ -17,6 +17,9 @@ export class PhotoComponent implements OnInit{
     this.photoIsLoaded = false;
   }
 
+  /*
+  * Bandera que avisa del momento en el que se carga la imagen desde el servidor. 
+  */
   onLoadImage() {
     this.photoIsLoaded = true;
   }
