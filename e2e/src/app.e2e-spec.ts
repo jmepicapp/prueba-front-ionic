@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { AppPage } from './app.po';
 
 describe('new App', () => {
@@ -7,8 +8,8 @@ describe('new App', () => {
     page = new AppPage();
   });
 
-  it('should be blank', () => {
+  it('Should render photo list', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toContain('Start with Ionic UI Components');
+    expect(page.getPhotoListComponents().count()).toBe(10);
   });
 });
